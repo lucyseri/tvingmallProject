@@ -174,6 +174,7 @@ const sec4ThumUl=sec4Thum.querySelector('ul');
 const sec4ThumUlLi=sec4ThumUl.querySelectorAll('li');
 
 const poster=document.querySelector('.poster');
+const posterImg=poster.querySelector('img');
 const rightCon=document.querySelectorAll('.right-con');
 
 sec4ArrowLeft.addEventListener('click', ()=>{
@@ -193,7 +194,7 @@ sec4ThumUl.addEventListener('click', (e)=>{
 
   sec4ThumUlLi.forEach((el, idx)=>{
     if(el==parentTarget){
-      poster.style.background=`url(../../img/poster${idx}.jpg) no-repeat 50%/cover`;
+      posterImg.setAttribute('src', `img/poster${idx}.jpg`)
       
       rightCon.forEach((el2, idx2)=>{
         if(idx2==idx){

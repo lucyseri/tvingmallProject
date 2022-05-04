@@ -451,10 +451,15 @@
 .container .inner-container .index-container .sections .section.sec4 .sec-con .sec4-bottom .bottom-con .poster-con .poster {
   width: 100%;
   height: inherit;
+  border-radius: 25px;
+}
+.container .inner-container .index-container .sections .section.sec4 .sec-con .sec4-bottom .bottom-con .poster-con .poster img{
+  width: 100%;
+  height: auto;
+  display: block;
   border: 1px solid;
   border-radius: 25px;
   box-sizing: border-box;
-  background: url(../../img/poster0.jpg) no-repeat 50%/cover;
 }
 
 .container .inner-container .index-container .sections .section.sec4 .sec-con .sec4-bottom .bottom-con .sec4-right {
